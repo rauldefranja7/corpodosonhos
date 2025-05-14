@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Corpo dos Sonhos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #f9f9f9; color: #333; }
+    .container { width: 90%; max-width: 1200px; margin: auto; padding: 20px; }
+    .header { background-color: #6e00ff; color: #fff; padding: 15px; text-align: center; position: fixed; width: 100%; top: 0; z-index: 1000; }
+    .timer {
+        font-weight: bold;
+        background-color: #ff4d4d;
+        padding: 2px 10px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .hero { margin-top: 120px; background-color: #6e00ff; color: #fff; padding: 40px 20px; text-align: center; border-radius: 10px; }
+    .cta { background-color: #ff9f00; color: #fff; padding: 15px 30px; border-radius: 30px; font-size: 18px; text-align: center; display: block; margin: 20px auto; text-decoration: none; font-weight: bold; }
+    .cta:hover { background-color: #f88600; }
+    .box { background-color: #f1f1f1; border-radius: 10px; padding: 20px; margin: 20px 0; text-align: center; }
+    .box strong { color: #6e00ff; font-size: 24px; }
+    .box p { margin: 10px 0; font-size: 18px; }
+    .testimonials, .before-after { margin: 20px 0; text-align: center; }
+    .testimonials img, .before-after img { width: 90%; max-width: 300px; border-radius: 15px; margin: 10px; }
+    .footer { background-color: #333; color: #fff; padding: 20px 10px; text-align: center; border-radius: 0 0 10px 10px; }
+    .faq { margin: 30px 0; background-color: #f1f1f1; padding: 20px; border-radius: 10px; }
+    .two-column {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: stretch;
+        margin-bottom: 20px;
+    }
+    .two-column .box {
+        flex: 1 1 0;
+        margin: 0 10px;
+    }
+    @media (max-width: 800px) {
+        .two-column {
+            flex-direction: column;
+            gap: 0;
+        }
+        .two-column .box {
+            margin: 10px 0;
+        }
+    }
+</style>
+    <script>
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+                display.textContent = minutes + ':' + seconds;
+                if (--timer < 0) timer = duration;
+            }, 1000);
+        }
+        window.onload = function () {
+            let tenMinutes = 60 * 10, display = document.querySelector('.timer');
+            startTimer(tenMinutes, display);
+        };
+    </script>
+</head>
+<body>
+    <div class="header">
+        <p>Essa oferta termina em <span class="timer">10:00</span></p>
+    </div>
+    <div class="container">
+        <div class="hero">
+            <h1>Método Corpo dos Sonhos</h1>
+            <p>Perca Peso com Comidas Deliciosas – Sem Sofrer, Sem Passar Fome, e Sem Contar Calorias!</p>
+            <p>Assista ao Vídeo e Descubra Como Emagrecer Rápido sem Abrir Mão dos Seus Pratos Favoritos!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ViiWEx3_mnk?si=G3lVG6w-ghA6965S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="https://pay.cakto.com.br/tp9nwbe" class="cta">Por apenas R$ 47,99 ou em 12x de R$ 5,58</a>
+        <div class="box">
+            <strong>Transformações Reais</strong>
+            <p>Veja os Resultados com o Método Corpo dos Sonhos</p>
+        </div>
+        <div class="before-after">
+            <img src="images/antes1.png" alt="Antes e Depois">
+            <img src="images/antes2.png" alt="Antes e Depois">
+            <img src="images/antes3.png" alt="Antes e Depois">
+        </div>
+        <div class="testimonials">
+            <img src="images/depo1.png" alt="Depoimento">
+            <img src="images/depo2.png" alt="Depoimento">
+            <img src="images/depo3.png" alt="Depoimento">
+        </div>
+        <div class="box">
+            <p>+ de 250 receitas que transformaram mais de 15.000 vidas</p>
+            <p>Receitas fáceis e rápidas que não apenas te ajudam a emagrecer, mas são deliciosas!</p>
+            <p>OFERTA ESPECIAL: De R$ 97 por apenas R$ 49,99</p>
+            <a href="https://pay.cakto.com.br/tp9nwbe" class="cta">Sim! Quero Emagrecer com Comidas Deliciosas</a>
+            <p>🔒 Compra 100% Segura – Garantia de 30 Dias ou Seu Dinheiro de Volta!</p>
+            <p>💳 Pagamentos Seguros com Criptografia Avançada</p>
+        </div>
+        <h2 style="text-align: center; color: #6e00ff;">A Solução: Método Corpo dos Sonhos</h2>
+        <p style="text-align: center; font-size: 18px;">Emagreça sem passar fome com 250 receitas que desbloqueiam seu metabolismo</p>
+        <div class="two-column">
+            <div class="box">
+                <strong>Por que funciona?</strong>
+                <p>Reduz a insulina no sangue, favorecendo a queima de gordura</p>
+                <p>Diminui a fome e controla a compulsão alimentar</p>
+                <p>Estabiliza os níveis de energia ao longo do dia</p>
+                <p>Permite perder peso comendo refeições deliciosas</p>
+            </div>
+            <div class="box">
+                <strong>Benefícios comprovados:</strong>
+                <p>Perda de peso visível em poucas semanas</p>
+                <p>Saúde melhorada, mais disposição</p>
+                <p>Refeições saborosas, sem passar fome</p>
+            </div>
+        </div>
+<div class="box">
+    <strong>Garanta Seu Acesso Agora</strong>
+    <p><s>E-book +de 250 Receitas R$ 97</s></p>
+    <p><s>Bônus 1: Plano de 30 Dias R$ 47</s></p>
+    <p><s>Bônus 2: Guia Anti-Compulsão R$ 37</s></p>
+    <p>Hoje por apenas: R$ 47,99 ou 12x de R$ 5,58</p>
+    <p>📚 +250 Receitas Deliciosas e Saudáveis para Emagrecer Rápido</p>
+    <p>✅ Acesso Imediato, Bônus Exclusivos e Garantia de 7 Dias</p>
+    <a href="https://pay.cakto.com.br/tp9nwbe" class="cta">Sim! Quero Emagrecer com Comidas Deliciosas</a>
+    <p>Pagamento único e seguro. Sem assinaturas ou cobranças recorrentes.</p>
+</div>
+    <div class="footer">
+        <p>© 2025 Método Corpo dos Sonhos. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
